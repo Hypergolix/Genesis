@@ -1,0 +1,72 @@
+header {
+    height: 600px;
+}
+
+.hMainPro {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: auto;
+    top: 194px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/*avoid long class names*/
+
+.hMainPro__left {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 48%;
+}
+
+.hMainPro__left h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    color: #111111;
+    width: 60%;
+}
+
+.hMainPro__left p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.hMainPro__right {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 335px;
+    height: 343px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hMainPro__right h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+table {
+    display: flex;
+}
+
+th {
+    white-space: nowrap;
+    text-align: left;
+    border-bottom: 1px solid #979797;
+}

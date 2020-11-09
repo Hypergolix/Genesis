@@ -1,8 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: 'Mulish', sans-serif;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
     width: 100%;
     /*
@@ -34,12 +48,19 @@ separate css doc for shared features
 
 .topNav {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: auto;
     top: 60px;
     width: 100%;
     /*or width 85%*/
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
 }
 
@@ -49,8 +70,15 @@ separate css doc for shared features
 }
 
 .topNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -70,8 +98,15 @@ separate css doc for shared features
 .hMain {
     position: relative;
     /*position: absolute;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     top: 180px;
     height: auto;
@@ -89,7 +124,12 @@ separate css doc for shared features
     min-height: 250px;*/
     width: 55%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
 }
 
@@ -123,10 +163,18 @@ separate css doc for shared features
 
 .rightText {
     margin: 0px 70px 20px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -ms-flex-item-align: end;
     align-self: flex-end;
 }
 
@@ -149,11 +197,16 @@ main {
 }
 
 .pictureGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-height: auto;
     /*1960px  keeps overflowing...*/
     /*lowering height to with space between works but margin is probably easier*/
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     /*align-content: space-between;*/
 }
@@ -162,8 +215,15 @@ main {
     height: auto;
     /*100%*/
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     /* 
     justify-content: space-between;
@@ -183,6 +243,8 @@ main {
 }
 
 .pictureGrid figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
     min-width: 100%;
@@ -199,7 +261,12 @@ main {
     top: 90px;
     height: auto;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
 }
 
@@ -212,15 +279,27 @@ main {
 .imgText__right {
     width: 75%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     /* margin-right: 30px;*/
     margin-left: 10px;
 }
 
 .imgText__right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
 }
 
@@ -231,13 +310,19 @@ li {
 #rightUl {
     /* margin-right: 30px;
     margin-left: 70px;*/
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
 #leftUl {
     margin-left: 90px;
     /*avoid using*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 3;
+    -ms-flex-positive: 3;
     flex-grow: 3;
     /*justify-self: center;*/
 }
@@ -293,6 +378,9 @@ h5 {
     width: 100%;
     height: 824px;
     top: 210px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
 }
 
@@ -308,10 +396,15 @@ h5 {
 /*this should be renamed as it's being used as a template for both top and bottom*/
 
 .mainBottom__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     height: 410px;
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
 }
 
@@ -326,22 +419,38 @@ h5 {
 }
 
 .bottomLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 60%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-right: auto;
 }
 
 .columnLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
     height: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
 .bottomRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 35%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
 }
 
@@ -349,15 +458,25 @@ h5 {
 /*come back to this, too confusing but it works right now*/
 
 .bottomRight div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     width: 100%;
     height: 100%;
 }
 
 .bottomRight div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
 }
 
@@ -378,25 +497,43 @@ footer {
 
 .footerNav {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: auto;
     width: 100%;
     /*or width 85%*/
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
 }
 
 .footerRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 35%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .footerNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 40%;
     min-width: 140px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     /*text align vertically needs set height - fix*/
 }
@@ -411,10 +548,17 @@ footer {
 }
 
 .footerLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     width: 25%;
     min-width: 42px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
