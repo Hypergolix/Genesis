@@ -382,11 +382,13 @@ h5 {
     -webkit-box-direction: normal;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    margin-bottom: 200px;
 }
 
 .divider2 {
     position: relative;
-    height: 1px;
+    height: 0.5px;
+    /*1px makes the top one thicker than the rest*/
     width: 100%;
     background-color: #D8D8D8;
     margin-bottom: 48px;
@@ -486,10 +488,10 @@ h5 {
 
 footer {
     position: relative;
-    top: 550px;
+    top: 400px;
+    /*550px*/
     height: auto;
     width: 85vw;
-    margin-bottom: 50px;
 }
 
 
@@ -510,6 +512,7 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    margin-bottom: 50px;
 }
 
 .footerRight {
@@ -568,87 +571,4 @@ footer {
 
 a:hover {
     color: #4A4FF2;
-}
-
-@media only screen and ( max-width:900px) {
-    .hText h1 {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    h2 {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .hText p {
-        font-size: 24px;
-        line-height: 34px;
-    }
-    .rightText p {
-        font-size: 14px;
-        line-height: 19px;
-    }
-    .rightText {
-        margin: 0px 0px 0px 0px;
-    }
-    main {
-        top: 0px;
-    }
-    header {
-        height: 400px;
-    }
-    #leftUl {
-        margin-left: 20px;
-        margin-right: 10px
-    }
-    .imgText a {
-        line-height: 14px;
-        font-size: 12px;
-        font-weight: 600;
-    }
-    h3 {
-        font-size: 18px;
-        line-height: 18x;
-        margin-top: -6px;
-        margin-right: 5px;
-    }
-    h4 {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    h5 {
-        font-size: 14px;
-        line-height: 16px;
-    }
-    .imgText a {
-        font-size: 12px;
-        line-height: 16px;
-    }
-    .mainBottom p {
-        font-size: 12px;
-        line-height: 23px;
-    }
-}
-
-@media only screen and ( max-width:600px) {
-    .hText h1 {
-        font-size: 10px;
-        line-height: 14px;
-    }
-    .hText p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .topNav a,
-    .footerNav a {
-        font-size: 12px;
-    }
-    .logo {
-        width: 50px;
-    }
-    .rightText p {
-        font-size: 10px;
-    }
-    .footerLinks img {
-        width: 11px;
-    }
 }
