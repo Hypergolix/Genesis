@@ -363,6 +363,14 @@ h5 {
     color: #111111;
 }
 
+h6 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    color: #111111;
+}
+
 .imgText a {
     font-style: normal;
     font-weight: normal;
@@ -488,8 +496,8 @@ h5 {
 
 footer {
     position: relative;
-    top: 400px;
-    /*550px*/
+    /*top: 400px;
+    550px*/
     height: auto;
     width: 85vw;
 }

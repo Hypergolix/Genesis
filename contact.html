@@ -4,11 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_prefix.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Genesis - Contact</title>
 </head>
 
 <body>
+    <header>
+        <div class="topNav">
+            <a href="index.html"><img src="img/Logo.svg" alt="Genesis" class="logo"></a>
+            <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hMainCon">
+            <div class="hMainCon__left">
+                <h6>Full set of great features to make your product fresh</h6>
+                <br>
+                <p>Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</p>
+            </div>
+            <div class="hMainCon__right">
+                <form id="contactForm" autocomplete="on">
+                    <div>
+                        <label for="fname"><p>Name</p></label>
+                        <input type="text" placeholder="" name="fname" id="fname" required maxlength="14">
+                    </div>
+                    <div>
+                        <label for="email"><p>Email</p></label>
+                        <input type="email" placeholder="" name="email" id="email" required maxlength="28">
+                    </div>
+                    <div>
+                        <label for="message"><p>Message</p></label>
+                        <input type="text" placeholder="" name="message" id="message" required maxlength="144">
+                    </div>
+                    <button type="submit" class="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="map">
 
+        </div>
+    </main>
+    <footer>
+        <div class="footerNav" id="footer">
+            <a href="index.html"><img src="img/Logo.svg" alt="logo" class="logo"></a>
+            <div class="footerRight">
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footerLinks">
+                    <a href="https://dribbble.com"><img src="icons/dribbble-logo.svg" alt="dribbble-logo"></a>
+                    <a href="https://www.instagram.com"><img src="icons/instagram.svg" alt="instagram-logo"></a>
+                    <a href="https://twitter.com"><img src="icons/twitter-logo-silhouette.svg" alt="twitter-logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
