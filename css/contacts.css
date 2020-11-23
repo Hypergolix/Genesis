@@ -95,6 +95,7 @@ input {
 .map {
     height: 570px;
     width: 100%;
+    filter: grayscale(100%) brightness(250%);
 }
 
 footer {
