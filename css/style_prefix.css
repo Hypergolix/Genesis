@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 body {
     display: -webkit-box;
@@ -233,14 +226,21 @@ main {
     */
 }
 
-#nomargin {
-    /*this id is reused which probably isn't ideal but it works*/
-    margin-bottom: 0;
+.column figure:nth-child(4) {
+    margin: 0px;
 }
 
 #middleColumn {
     margin: 0px 10px 0px 10px;
 }
+
+
+/*    this id is unused, add new way to remove bottom margin for last img in column
+
+.nomargin {
+    margin-bottom: 0px;
+}
+*/
 
 .pictureGrid figure {
     display: -webkit-box;
@@ -579,4 +579,16 @@ footer {
 
 a:hover {
     color: #4A4FF2;
+}
+
+#icon1:hover {
+    content: url('/icons/dribbble-logo-blue.svg');
+}
+
+#icon2:hover {
+    content: url('/icons/instagram-blue.svg');
+}
+
+#icon3:hover {
+    content: url('/icons/twitter-logo-silhouette-blue.svg');
 }
